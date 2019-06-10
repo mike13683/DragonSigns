@@ -1,0 +1,36 @@
+@import 'custom/vendors/juice';
+
+//jumbotron bg colour
+.jumbotron.hero{
+  background-color:#122632;
+  overflow: hidden;
+}
+
+////title font size change
+//scale header text on scroll
+.header-js{
+  position: relative;
+  transition: all 1s;
+  font-size: rem-calc(70px);
+
+  @include media-breakpoint-down(sm){
+    font-size: rem-calc(45px);
+  }
+}
+
+//scale header text on scroll
+.header-js-secondary{
+  transform: scale(1.2);
+
+  @include media-breakpoint-down(sm){
+    transform: scale(1);
+  }
+}
+
+//mobile - hero text padding and text align
+@include media-breakpoint-down(md){
+  .hero p{
+    padding: 0 30px !important;
+    text-align: left;
+  }
+}

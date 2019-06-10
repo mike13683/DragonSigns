@@ -1,0 +1,88 @@
+@import 'custom/vendors/juice';
+
+//corrects padding issue on exploror 11
+html,body
+{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  //overflow-x: hidden;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.gap-0{
+  margin:-10px;
+}
+
+.gap-1{
+  margin: 20px 0;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+//text-size-25
+.text-size-25{
+  font-size:rem-calc(25px) !important;
+
+  @include media-breakpoint-down(md){
+    font-size:rem-calc(20px) !important;
+  }
+}
+
+//text-size-40
+.text-size-40{
+  font-size:rem-calc(40px) !important;
+}
+
+.heading-font-heavy{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  font-size: rem-calc(40px);
+}
+
+.colour-primary{
+ color: $primary;
+}
+
+.heading-font-light{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:300;
+  font-size: rem-calc(40px);
+}
+
+.bg-color-primary{
+  background-color: $primary;
+}
+
+//moves right cursor on carousel to the left on all #carousel-case-study
+#carousel-case-study .carousel-control-next{
+  right:20% !important;
+
+  @include media-breakpoint-down(sm){
+    right:5% !important;
+  }
+}
+
+// move down on scroll, about page
+.movedown-js {
+  padding-top:30px;
+  opacity: 0;
+  transition: all 1.3s ease-out;
+}
+
+.movedown-js.fade-in {
+  opacity: 1;
+  padding-top:0;
+}
+
+//text box font increase size, used on process and work page
+.text-box{
+  font-size: rem-calc(22px);
+}

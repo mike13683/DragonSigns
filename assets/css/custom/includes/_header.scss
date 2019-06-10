@@ -1,0 +1,47 @@
+//navbar
+//social contact details text change on mobile up
+.nav-text{
+  color:$primary;
+  font-size:1.5rem;
+
+  @media (max-width: 768px) {
+    font-size:1.0rem;
+
+    //hides number and email on ipad
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+
+  //phone number change to white
+  p{
+    color:#fff;
+  }
+
+  //email text change to white on hover and remove underline
+  a{
+    text-decoration: none;
+
+    &:hover{
+      color:#fff;
+    }
+  }
+
+}
+
+//incease navbar text size, remove underline and hover colour
+.navbar-nav li a{
+  font-size:1.55em !important;
+  padding-left:12px;
+  padding-right:12px;
+  text-decoration: none;
+
+  &:hover{
+    color:#fff;
+  }
+}
+
+//active navbar colour change
+.active a {
+  color: #fff !important;
+}

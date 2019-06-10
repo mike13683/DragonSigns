@@ -1,0 +1,686 @@
+---
+---
+
+@import 'custom/bootstrap-override';
+@import 'bootstrap/bootstrap';
+@import 'custom/includes/header';
+@import 'custom/includes/social';
+@import 'custom/includes/gallery';
+@import 'custom/includes/footer';
+@import 'custom/includes/hero';
+@import 'custom/helpers/global-classes';
+@import 'custom/helpers/mixins';
+@import 'custom/vendors/juice';
+
+/*
+ * Website Name - Concept Fire Security
+ * Date - 9/5/18
+ * Designed by Michael Owens / Dragon Info Tech
+ */
+//googlefont
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700');
+
+//HOME
+//Hero section
+.home-hero{
+
+  .carousel-item{
+    height: 100%;
+    width:100%;
+  }
+
+  .home-hero--bg-1{
+    background: url("/assets/img/home-hero-a.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    @include calc-100-minusnavbar;
+  }
+
+  .home-hero--bg-2{
+    background: url("/assets/img/home-hero-b.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    @include calc-100-minusnavbar;
+  }
+
+  .home-hero--bg-3{
+    background: url("/assets/img/home-hero-c.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    @include calc-100-minusnavbar;
+  }
+
+  .carousel-inner{
+    position: relative;
+  }
+
+  //place dragon logo
+  .carousel-caption{
+    height:300px;
+    width:312px;
+    left:50%;
+    top:40%;
+    transform:translateX(-50%) translateY(-50%);
+  }
+
+  //add animation to dragon logo
+  .flip-in-diag-2-tl {
+    -webkit-animation: flip-in-diag-2-tl 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: flip-in-diag-2-tl 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  @-webkit-keyframes flip-in-diag-2-tl {
+    0% {
+      -webkit-transform: rotate3d(-1, 1, 0, 80deg);
+      transform: rotate3d(-1, 1, 0, 80deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate3d(1, 1, 0, 0deg);
+      transform: rotate3d(1, 1, 0, 0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes flip-in-diag-2-tl {
+    0% {
+      -webkit-transform: rotate3d(-1, 1, 0, 80deg);
+      transform: rotate3d(-1, 1, 0, 80deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate3d(1, 1, 0, 0deg);
+      transform: rotate3d(1, 1, 0, 0deg);
+      opacity: 1;
+    }
+  }
+
+}
+
+//intro text area
+.intro-text{
+  background-color: $primary;
+  font-size: rem-calc(26px);
+  text-align: justify;
+}
+
+//scrollmagic hook
+.intro-text__content{
+  opacity: 0;
+  top: 20px;
+  transition: all 1s;
+}
+
+//fades in rows on scroll
+.fade-in-2{
+  opacity: 1;
+  position: relative;
+  top:0;
+}
+
+//About us
+
+.home-about{
+  height: 100vh;
+  position: relative;
+  h2{
+    color:$primary;
+  }
+
+  //center conent
+  &__content{
+    @include centerer;
+  }
+}
+
+//Our work
+#home-our-work [class*="col-"] {
+  padding:5px !important;
+}
+
+//box height
+.home-our-work{
+  height: 500px;
+
+  &__content{
+    @include centerer;
+  }
+}
+
+//box 1
+
+//box 2
+.home-our-work--bg-image-1{
+  background: url("/assets/img/home-ourwork-a.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+//box 3
+.home-our-work--bg-image-2{
+  background: url("/assets/img/home-ourwork-b.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+//box 4
+.home-our-work--bg-image-3{
+  background: url("/assets/img/home-ourwork-c.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+//box 5
+.home-our-work--bg-image-4{
+  background: url("/assets/img/home-ourwork-d.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+//box 6
+
+//Our process left
+.home-process{
+  height: 100vh;
+
+  h2{
+    color:$primary;
+  }
+
+  //center conent
+  &__content{
+    @include centerer;
+  }
+}
+
+//hover bg colour change on our work and our case studies
+.home-our-work{
+  color:#fff !important;
+  background-color: $primary;
+  transition: all 1s;
+
+  &:hover {
+    background-color:darken($primary,8%);
+  }
+}
+
+
+//Case studies
+#home-our-case-studies [class*="col-"] {
+  padding:5px !important;
+}
+//box 1
+
+//box 2
+.home-our-case-study--bg-image-1{
+  background: url("/assets/img/home-casestudy-a.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+//box 3
+.home-our-case-study--bg-image-2{
+  background: url("/assets/img/home-casestudy-b.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+//box 4
+.home-our-case-study--bg-image-3{
+  background: url("/assets/img/dragon-signs-viola-3.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+//box 5
+.home-our-case-study--bg-image-4{
+  background: url("/assets/img/case-study-mini-h.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+//box 6
+
+//ABOUT
+//intro about image
+
+.about-about-us{
+  height: 100vh;
+}
+
+.about-about-us--image{
+  background: url("/assets/img/about-us-printer.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+//intro about text
+.about-about-us__content{
+  @include media-breakpoint-up(md){
+    @include centerer;
+  }
+}
+
+//team text center
+.team__content{
+  @include media-breakpoint-up(md){
+    @include centerer;
+  }
+}
+
+//team text
+.team--image{
+  background: url("/assets/img/about-us-team.jpg") center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+//rhys image
+.rhys--image{
+  background: url("/assets/img/about-us-rhys.jpg") center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+//rhys text
+.rhys__content{
+  @include media-breakpoint-up(md){
+    @include centerer;
+  }
+}
+
+//Managers
+//padding for last managers section
+.managers-padding{
+  padding:40px;
+}
+
+.managers .card-body{
+  min-height: 400px;
+
+  h5, h6{
+    font-size: rem-calc(20px);
+  }
+}
+
+//OUR WORK
+
+//gallery
+.services{
+  height:400px;
+  position: relative;
+  color:#fff;
+
+  //&__content {
+  //  position: absolute;
+  //  right: 0;
+  //  background-color: rgba(0,0,0,0.7);
+  //  padding: 10px;
+  //}
+}
+
+.services-1{
+  background: url("/assets/img/our-work1.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-2{
+  background: url("/assets/img/our-work2.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-3{
+  background: url("/assets/img/our-work3.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-4{
+  background: url("/assets/img/our-work4.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-5{
+  background: url("/assets/img/our-work5.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-6{
+  background: url("/assets/img/our-work6.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-7{
+  background: url("/assets/img/ourwork7.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-8{
+  background: url("/assets/img/our-work8.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-9{
+  background: url("/assets/img/our-work9.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-10{
+  background: url("/assets/img/our-work10.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-11{
+  background: url("/assets/img/our-work11.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-12{
+  background: url("/assets/img/our-work12.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-13{
+  background: url("/assets/img/our-work13.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-14{
+  background: url("/assets/img/our-work14.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-15{
+  background: url("/assets/img/our-work15.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-16{
+  background: url("/assets/img/our-work16.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-17{
+  background: url("/assets/img/our-work17.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-18{
+  background: url("/assets/img/our-work18.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-19{
+  background: url("/assets/img/our-work19.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-20{
+  background: url("/assets/img/our-work20.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-21{
+  background: url("/assets/img/our-work21.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-22{
+  background: url("/assets/img/our-work22.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-23{
+  background: url("/assets/img/our-work23.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-24{
+  background: url("/assets/img/our-work24.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-25{
+  background: url("/assets/img/our-work25.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-26{
+  background: url("/assets/img/our-work26.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-27{
+  background: url("/assets/img/our-work27.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-28{
+  background: url("/assets/img/our-work28.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-29{
+  background: url("/assets/img/our-work29.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-30{
+  background: url("/assets/img/our-work30.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-31{
+  background: url("/assets/img/our-work31.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-32{
+  background: url("/assets/img/our-work32.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-33{
+  background: url("/assets/img/our-work33.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-34{
+  background: url("/assets/img/our-work34.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-35{
+  background: url("/assets/img/our-work35.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.services-36{
+  background: url("/assets/img/our-work36.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+//OUR PROCESS
+//site audit
+//.our-process--image-1{
+//  background: url("/assets/img/our-process-1.jpg") center center no-repeat;
+//  background-size: cover;
+//  height: 100vh;
+//}
+
+//sign design
+.our-process--image-2{
+  background: url("/assets/img/our-process-2.jpg") center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+//decreases size of heading text on first section and removes bottom margin
+.team__header--font-down h2{
+  margin-bottom:0;
+
+  span{
+    font-size: rem-calc(18px) !important;
+    margin-bottom:0;
+  }
+}
+
+//sign instalation
+.our-process--image-3{
+  background: url("/assets/img/our-process-3.jpg") center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+//DIGITAL
+//video dragon digital
+.parent-container {
+  position: relative;
+  min-height:100%;
+  overflow:hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 101%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+//video dragon digital center logo
+.digital-logo img{
+  @include centerer;
+  height:200px;
+  width:600px;
+}
+
+.about-about-us--digital-bg-colour{
+  background-color:$primary;
+}
+
+.digital--image-1{
+  background: url("/assets/img/digital-1.jpg") center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  @include media-breakpoint-down(md){
+    background: url("/assets/img/digital-1m.jpg") center center no-repeat;
+  }
+}
+
+//CASE STUDIES MAIN PAGE
+.case-study{
+  height: 400px;
+  position: relative;
+
+  &__content{
+    position: absolute;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px;
+  }
+
+  //overwrites bootstrap default
+  h3{
+    color:#fff !important;
+  }
+}
+//built logo img resize
+.built .my-img img{
+  height:47px;
+}
+
+.case-study-image-1{
+  background: url("/assets/img/case-study-mini-front.jpg") center center no-repeat;
+  background-sfize: cover;
+  position: relative;
+}
+
+.case-study-image-2{
+  background: url("/assets/img/case-study-oprema-front.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.case-study-image-3{
+  background: url("/assets/img/case-study-built-front.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.case-study-image-4{
+  background: url("/assets/img/case-study-tp-front.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.case-study-image-5{
+  background: url("/assets/img/case-study-motorpoint-front.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.case-study-image-6{
+  background: url("/assets/img/case-study-viola-arena-front.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+//CASE STUDY SUB PAGES
+#carousel-case-study img{
+  height: 100%;
+  width:750px;
+}
+
+.my-img img{
+  @include centerer;
+  height:200px;
+  width:200px;
+  opacity:0;
+  transition: all 1s;
+}
+
+//viola logo image edit height
+.viola-logo-resize .my-img img{
+  height:300px;
+}
+
+.case-study:hover .my-img img{
+  opacity: 1;
+}
+
+//HOMEPAGE case studies
+.home-our-work:hover .my-img img{
+  opacity: 1;
+}
+//hover effect
+.layer{
+  background-color:transparent;
+  width:100%;
+  height:100%;
+  transition: all 1s;
+
+
+  &:hover{
+    background-color: rgba($primary, 0.2);
+    width:100%;
+    height:100%;
+  }
+}
+
+//NEWS
+
+//CONTACT
+//contact text
+.contact{
+  @include calc-100-minusnavbar();
+  background-color: #122632;
+
+  &__content{
+    @include centerer;
+  }
+}
+
+//contact image
+.contact--image{
+  background: url("/assets/img/contact.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+//.outter2{
+//  text-align: justify;
+//  position: relative;
+//}
+//
+//.foo123{
+//  @include centerer;
+//}

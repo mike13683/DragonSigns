@@ -1,0 +1,33 @@
+
+//gallery
+//force shows first row - not mobile
+@include media-breakpoint-up(sm){
+  .services-1, .services-2, .services-3, .services-4{
+    opacity: 1 !important;
+    top: 0 !important;
+
+    //top row opacity on hover
+    &:hover{
+      opacity:0.7 !important;
+    }
+  }
+}
+
+//hides all other rows
+.services{
+  opacity: 0;
+  top: 15px;
+  transition: all 1s;
+
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+//fades in rows on scroll
+.fade-in{
+  opacity: 1;
+  position: relative;
+  top:0;
+}
+

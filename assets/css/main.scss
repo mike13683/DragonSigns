@@ -24,6 +24,10 @@
 //Hero section
 .home-hero{
 
+  img {
+    opacity: 0.8;
+  }
+
   .carousel-item{
     height: 100%;
     width:100%;
@@ -48,6 +52,13 @@
     background-size: cover;
     width: 100%;
     @include calc-100-minusnavbar;
+  }
+
+  //bg overlay dark
+  .layer-dark{
+    background-color: rgba(#000, 0.2);
+    width:100%;
+    height:100%;
   }
 
   .carousel-inner{
@@ -78,7 +89,7 @@
     100% {
       -webkit-transform: rotate3d(1, 1, 0, 0deg);
       transform: rotate3d(1, 1, 0, 0deg);
-      opacity: 1;
+      opacity: 0.8;
     }
   }
   @keyframes flip-in-diag-2-tl {
@@ -90,7 +101,7 @@
     100% {
       -webkit-transform: rotate3d(1, 1, 0, 0deg);
       transform: rotate3d(1, 1, 0, 0deg);
-      opacity: 1;
+      opacity: 0.8;
     }
   }
 
@@ -579,9 +590,35 @@
     color:#fff !important;
   }
 }
-//built logo img resize
-.built .my-img img{
-  height:47px;
+
+//case study logo
+.my-img img{
+  @include centerer;
+  width:auto !important;
+  opacity:0;
+  transition: all 1s;
+}
+
+.case-study:hover .my-img img{
+  opacity: 1;
+}
+
+//HOMEPAGE case studies
+.home-our-work:hover .my-img img{
+  opacity: 1;
+}
+//hover effect
+.layer{
+  background-color:transparent;
+  width:100%;
+  height:100%;
+  transition: all 1s;
+
+  &:hover{
+    background-color: rgba($primary, 0.2);
+    width:100%;
+    height:100%;
+  }
 }
 
 .case-study-image-1{
@@ -615,46 +652,15 @@
   background-size: cover;
 }
 
+.case-study-image-7{
+  background: url("/assets/img/dragon-signs-cardiff-airport-case-study.jpg") center center no-repeat;
+  background-size: cover;
+}
+
 //CASE STUDY SUB PAGES
 #carousel-case-study img{
   height: 100%;
   width:750px;
-}
-
-.my-img img{
-  @include centerer;
-  height:200px;
-  width:200px;
-  opacity:0;
-  transition: all 1s;
-}
-
-//viola logo image edit height
-.viola-logo-resize .my-img img{
-  height:300px;
-}
-
-.case-study:hover .my-img img{
-  opacity: 1;
-}
-
-//HOMEPAGE case studies
-.home-our-work:hover .my-img img{
-  opacity: 1;
-}
-//hover effect
-.layer{
-  background-color:transparent;
-  width:100%;
-  height:100%;
-  transition: all 1s;
-
-
-  &:hover{
-    background-color: rgba($primary, 0.2);
-    width:100%;
-    height:100%;
-  }
 }
 
 //NEWS

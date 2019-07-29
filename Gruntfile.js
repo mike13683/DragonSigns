@@ -20,7 +20,7 @@ module.exports = function(grunt) {
                 stoponerror: false,
                 relaxerror: []
             },
-            files: ['*.html']
+            files: ['_site/*.html']
         },
         sass: {
             dist: {
@@ -79,7 +79,7 @@ module.exports = function(grunt) {
                 tasks: ['imagemin']
             },
             bootlint: {
-                files: ['*.html'],
+                files: ['_site/*.html'],
                 tasks: ['bootlint']
             },
 

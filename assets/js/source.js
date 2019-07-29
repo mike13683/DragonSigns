@@ -27,7 +27,6 @@ $(document).ready(function(){
     // Init ScrollMagic
     var controllerScroll = new ScrollMagic.Controller();
 
-
     var pinScene = new ScrollMagic.Scene({
         triggerElement: '.js-pin-hook',
         triggerHook: 0,
@@ -159,10 +158,11 @@ $(document).ready(function(){
      colorStart: '#75C695'
      });*/
 
-    // $('.carousel').carousel({
-    //     interval: 72000
-    // })
-
+    // change all carousel slide times to two seconds
+    $('.carousel').carousel({
+        interval: 2000
+    })
+    
 
     });
 

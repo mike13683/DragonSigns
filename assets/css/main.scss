@@ -682,11 +682,27 @@
   background-size: cover;
 }
 
-//.outter2{
-//  text-align: justify;
-//  position: relative;
-//}
-//
-//.foo123{
-//  @include centerer;
-//}
+.contact{
+  position: relative;
+  height:100%;
+}
+.contact__content{
+  @include centerer;
+
+  //width of contact form container
+  @include media-breakpoint-up(md){
+    width: 70% !important;
+  }
+
+  textarea{
+    height:100px;
+  }
+
+  button, textarea{
+    width:350px;
+    position: relative;
+    text-align: center;
+    left:50%;
+    transform:translateX(-50%);
+  }
+}

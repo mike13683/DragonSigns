@@ -144,7 +144,7 @@
       top:0;
 
       img{
-        width: 200px;
+        width: 150px;
         display: block;
         left:50%;
         transform:translateX(-50%);
@@ -155,8 +155,6 @@
 
 
 }
-
-
 
 
 .intro-bg-colour-yellow{
@@ -351,199 +349,18 @@
 }
 
 //OUR WORK
-
-//gallery
-.services{
-  height:400px;
+.our-work{
+  height:100%;
   position: relative;
-  color:#fff;
 
-  //&__content {
-  //  position: absolute;
-  //  right: 0;
-  //  background-color: rgba(0,0,0,0.7);
-  //  padding: 10px;
-  //}
-}
+  &__content{
+    @include centerer;
 
-.services-1{
-  background: url("/assets/img/our-work1.jpg") center center no-repeat;
-  background-size: cover;
-}
+  }
 
-.services-2{
-  background: url("/assets/img/our-work2.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-3{
-  background: url("/assets/img/our-work3.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-4{
-  background: url("/assets/img/our-work4.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-5{
-  background: url("/assets/img/our-work5.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-6{
-  background: url("/assets/img/our-work6.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-7{
-  background: url("/assets/img/ourwork7.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-8{
-  background: url("/assets/img/our-work8.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-9{
-  background: url("/assets/img/our-work9.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-10{
-  background: url("/assets/img/our-work10.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-11{
-  background: url("/assets/img/our-work11.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-12{
-  background: url("/assets/img/our-work12.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-13{
-  background: url("/assets/img/our-work13.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-14{
-  background: url("/assets/img/our-work14.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-15{
-  background: url("/assets/img/our-work15.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-16{
-  background: url("/assets/img/our-work16.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-17{
-  background: url("/assets/img/our-work17.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-18{
-  background: url("/assets/img/our-work18.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-19{
-  background: url("/assets/img/our-work19.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-20{
-  background: url("/assets/img/our-work20.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-21{
-  background: url("/assets/img/our-work21.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-22{
-  background: url("/assets/img/our-work22.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-23{
-  background: url("/assets/img/our-work23.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-24{
-  background: url("/assets/img/our-work24.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-25{
-  background: url("/assets/img/our-work25.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-26{
-  background: url("/assets/img/our-work26.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-27{
-  background: url("/assets/img/our-work27.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-28{
-  background: url("/assets/img/our-work28.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-29{
-  background: url("/assets/img/our-work29.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-30{
-  background: url("/assets/img/our-work30.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-31{
-  background: url("/assets/img/our-work31.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-32{
-  background: url("/assets/img/our-work32.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-33{
-  background: url("/assets/img/our-work33.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-34{
-  background: url("/assets/img/our-work34.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-35{
-  background: url("/assets/img/our-work35.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.services-36{
-  background: url("/assets/img/our-work36.jpg") center center no-repeat;
-  background-size: cover;
+  h3{
+  line-height: 1.2;
+  }
 }
 
 //OUR PROCESS

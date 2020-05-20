@@ -41,14 +41,21 @@
   }
 
   .home-hero--bg-2{
-    background: url("/assets/img/home-hero-b.jpg") center center no-repeat;
+    background: url("/assets/img/top-banner-image-1.jpg") center center no-repeat;
     background-size: cover;
     width: 100%;
     @include calc-100-minusnavbar;
   }
 
   .home-hero--bg-3{
-    background: url("/assets/img/home-hero-c.jpg") center center no-repeat;
+    background: url("/assets/img/top-banner-image-2.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    @include calc-100-minusnavbar;
+  }
+
+  .home-hero--bg-4{
+    background: url("/assets/img/top-banner-image-3.jpg") center center no-repeat;
     background-size: cover;
     width: 100%;
     @include calc-100-minusnavbar;
@@ -108,17 +115,56 @@
 }
 
 //intro text area
-.intro-text{
-  background-color: $primary;
-  font-size: rem-calc(26px);
-  text-align: justify;
+//.intro-text{
+//  background-color: $primary;
+//  font-size: rem-calc(26px);
+//  text-align: justify;
+//}
+//
+////scrollmagic hook
+//.intro-text__content{
+//  opacity: 0;
+//  top: 20px;
+//  transition: all 1s;
+//}
+
+.bg-colour-light{
+  background-color:#f7eac8;
+}
+.intro{
+  height:100%;
+  position: relative;
+  padding: 300px 0;
+
+  &__content {
+    @include centerer;
+
+    .intro__media{
+      position: relative;
+      top:0;
+
+      img{
+        width: 200px;
+        display: block;
+        left:50%;
+        transform:translateX(-50%);
+        position: relative;
+      }
+    }
+  }
+
+
 }
 
-//scrollmagic hook
-.intro-text__content{
-  opacity: 0;
-  top: 20px;
-  transition: all 1s;
+
+
+
+.intro-bg-colour-yellow{
+  background-color: #FAB802 !important;
+}
+
+.intro-bg-colour-red{
+  background-color: #EC1D23;
 }
 
 //fades in rows on scroll
@@ -161,7 +207,7 @@
 
 //box 2
 .home-our-work--bg-image-1{
-  background: url("/assets/img/home-ourwork-a.jpg") center center no-repeat;
+  background: url("/assets/img/our-work-1.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -173,13 +219,13 @@
 
 //box 4
 .home-our-work--bg-image-3{
-  background: url("/assets/img/home-ourwork-c.jpg") center center no-repeat;
+  background: url("/assets/img/our-work-2.jpg") center center no-repeat;
   background-size: cover;
 }
 
 //box 5
 .home-our-work--bg-image-4{
-  background: url("/assets/img/home-ourwork-d.jpg") center center no-repeat;
+  background: url("/assets/img/our-work-3.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -219,19 +265,19 @@
 
 //box 2
 .home-our-case-study--bg-image-1{
-  background: url("/assets/img/home-casestudy-a.jpg") center center no-repeat;
+  background: url("/assets/img/our-work-4.jpeg") center center no-repeat;
   background-size: cover;
 }
 
 //box 3
 .home-our-case-study--bg-image-2{
-  background: url("/assets/img/home-casestudy-b.jpg") center center no-repeat;
+  background: url("/assets/img/our-work-5.jpeg") center center no-repeat;
   background-size: cover;
 }
 
 //box 4
 .home-our-case-study--bg-image-3{
-  background: url("/assets/img/home-ourwork-e.jpg") center center no-repeat;
+  background: url("/assets/img/our-work-6.jpeg") center center no-repeat;
   background-size: cover;
 }
 
@@ -510,7 +556,7 @@
 
 //sign design
 .our-process--image-2{
-  background: url("/assets/img/our-process-2.jpg") center center no-repeat;
+  background: url("/assets/img/our-process-christ-college.jpg") center center no-repeat;
   background-size: cover;
   height: 100vh;
 }

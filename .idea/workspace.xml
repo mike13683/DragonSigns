@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bca298f-e9ca-4824-952f-fee64ddf7831" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/home-hero-a.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/home-hero-a.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our-work.html" beforeDir="false" afterPath="$PROJECT_DIR$/our-work.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/covid-warning.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -95,7 +91,7 @@
             <entry file="file://$PROJECT_DIR$/_config.yml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="173">
-                  <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="29" />
+                  <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
                 </state>
               </provider>
             </entry>
@@ -406,12 +402,12 @@
       <workItem from="1581617415433" duration="639000" />
       <workItem from="1589896296343" duration="9466000" />
       <workItem from="1589915611877" duration="6552000" />
-      <workItem from="1589980069735" duration="16415000" />
+      <workItem from="1589980069735" duration="16736000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="361646000" />
+    <option name="totallyTimeSpent" value="361967000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -749,7 +745,7 @@
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
-          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="29" />
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
         </state>
       </provider>
     </entry>

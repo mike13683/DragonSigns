@@ -30,7 +30,7 @@ $(document).ready(function(){
     var pinScene = new ScrollMagic.Scene({
         triggerElement: '.js-pin-hook',
         triggerHook: 0,
-        duration: '70%'
+        duration: '85%'
     })
         .setPin('.js-pin-hook', {pushFollowers: false})
         // .addIndicators({
@@ -162,10 +162,8 @@ $(document).ready(function(){
     $('.carousel').carousel({
         interval: 2000
     })
-    
+
 
     });
 
-// $(document).ready(function() {
-//     $(".fancybox").fancybox();
-// });
+

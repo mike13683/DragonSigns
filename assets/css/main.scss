@@ -111,22 +111,7 @@
       opacity: 0.8;
     }
   }
-
 }
-
-//intro text area
-//.intro-text{
-//  background-color: $primary;
-//  font-size: rem-calc(26px);
-//  text-align: justify;
-//}
-//
-////scrollmagic hook
-//.intro-text__content{
-//  opacity: 0;
-//  top: 20px;
-//  transition: all 1s;
-//}
 
 .bg-colour-light{
   background-color:#f7eac8;
@@ -134,35 +119,10 @@
 .intro{
   height:100%;
   position: relative;
-  padding: 300px 0;
 
   &__content {
     @include centerer;
-
-    .intro__media{
-      position: relative;
-      top:0;
-
-      img{
-        width: 150px;
-        display: block;
-        left:50%;
-        transform:translateX(-50%);
-        position: relative;
-      }
-    }
   }
-
-
-}
-
-
-.intro-bg-colour-yellow{
-  background-color: #FAB802 !important;
-}
-
-.intro-bg-colour-red{
-  background-color: #EC1D23;
 }
 
 //fades in rows on scroll
@@ -172,8 +132,41 @@
   top:0;
 }
 
-//About us
+//covid ticket
+.covid{
+  width:100%;
+  height:260px;
 
+  @include media-breakpoint-up(lg){
+    height:80px;
+  }
+
+  &__content{
+    @include centerer;
+    text-align: center;
+  }
+
+  .covid-header p{
+    font-size:38px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    button {
+      margin-bottom: 10px;
+      margin-left: 20px;
+    }
+  }
+}
+
+.intro-bg-colour-yellow{
+  background-color: #FAB802;
+}
+
+.intro-bg-colour-red{
+  background-color: #EC1D23;
+}
+
+//About us
 .home-about{
   height: 100vh;
   position: relative;
@@ -361,15 +354,16 @@
   h3{
   line-height: 1.2;
   }
-}
 
-//OUR PROCESS
-//site audit
-//.our-process--image-1{
-//  background: url("/assets/img/our-process-1.jpg") center center no-repeat;
-//  background-size: cover;
-//  height: 100vh;
-//}
+  .bg-overlay{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    background-color: rgba(0,0,0,0.4);
+  }
+}
 
 //sign design
 .our-process--image-2{

@@ -26,6 +26,12 @@
                 <li><a href="/">Home</a></li>
                 {% endif %}
 
+                {% if page.active == "ppe-products" %}
+                <li class="active"><a href="#">PPE Products</a></li>
+                {% else %}
+                <li><a href="../ppe-products.html">PPE Products</a></li>
+                {% endif %}
+
                 {% if page.active == "about" %}
                 <li class="active"><a href="#">About</a></li>
                 {% else %}

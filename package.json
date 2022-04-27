@@ -5,7 +5,7 @@
   "main": "index.html",
   "devDependencies": {
     "autoprefixer": "^8.2.0",
-    "grunt": "^1.0.1",
+    "grunt": "^1.5.2",
     "grunt-bootlint": "^0.10.2",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-htmlmin": "^0.4.0",
